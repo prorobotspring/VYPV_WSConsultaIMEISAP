@@ -1,0 +1,93 @@
+[2011Sep29 10:25:20,630][INFO ][1234567][consultarImeiSap ConsultaImeiSap.java:34][Inicio invocacion de WSConsultaIMEISAP. Channel:bus User:siebel]
+[2011Sep29 10:25:20,635][DEBUG][1234567][conectarSap EjecutarRFC.java:27][Inciando conexión a SAP]
+[2011Sep29 10:25:20,690][DEBUG][1234567][ejecutarRFC EjecutarRFC.java:51][Ejecutando RFC]
+[2011Sep29 10:25:21,132][DEBUG][1234567][ejecutarRFC EjecutarRFC.java:56][Ejecucion de la RFC existosa]
+[2011Sep29 10:25:21,135][DEBUG][1234567][ejecutarRFC EjecutarRFC.java:60][Codigo de retorno:07]
+[2011Sep29 10:25:21,140][INFO ][1234567][procesarRespuesta ProcesarRespuestaSap.java:55][El IMEI no se encuentra en el centro indicado]
+[2011Sep29 10:25:21,144][INFO ][1234567][ProcesarSP ProcesarSp.java:56][Finally - Cerrando Conexiones]
+[2011Sep29 10:25:21,147][DEBUG][1234567][consultarImeiSap ConsultaImeiSap.java:126][Ocurrio un error al ejecutar el SP]
+javax.naming.NameNotFoundException: Unable to resolve 'ds.vypv_fraude_sap'. Resolved 'ds'; remaining name 'vypv_fraude_sap'
+	at weblogic.jndi.internal.BasicNamingNode.newNameNotFoundException(BasicNamingNode.java:1139)
+	at weblogic.jndi.internal.BasicNamingNode.lookupHere(BasicNamingNode.java:252)
+	at weblogic.jndi.internal.ServerNamingNode.lookupHere(ServerNamingNode.java:182)
+	at weblogic.jndi.internal.BasicNamingNode.lookup(BasicNamingNode.java:206)
+	at weblogic.jndi.internal.BasicNamingNode.lookup(BasicNamingNode.java:214)
+	at weblogic.jndi.internal.WLEventContextImpl.lookup(WLEventContextImpl.java:254)
+	at weblogic.jndi.internal.WLContextImpl.lookup(WLContextImpl.java:380)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at digitel.WebService.conexion(WebService.java:47)
+	at digitel.WebService.conexion(WebService.java:30)
+	at digitel.ProcesarSp.ProcesarSP(ProcesarSp.java:19)
+	at digitel.ConsultaImeiSap.consultarImeiSap(ConsultaImeiSap.java:119)
+	at digitel.bindings.WSConsultaIMEISAPImpl.consultarImeiSap(WSConsultaIMEISAPImpl.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at weblogic.webservice.component.javaclass.JavaClassInvocationHandler.invoke(JavaClassInvocationHandler.java:134)
+	at weblogic.webservice.core.handler.InvokeHandler.handleRequest(InvokeHandler.java:105)
+	at weblogic.webservice.core.HandlerChainImpl.handleRequest(HandlerChainImpl.java:144)
+	at weblogic.webservice.core.DefaultOperation.process(DefaultOperation.java:551)
+	at weblogic.webservice.server.Dispatcher.process(Dispatcher.java:204)
+	at weblogic.webservice.server.Dispatcher.doDispatch(Dispatcher.java:175)
+	at weblogic.webservice.server.Dispatcher.dispatch(Dispatcher.java:97)
+	at weblogic.webservice.server.WebServiceManager.dispatch(WebServiceManager.java:101)
+	at weblogic.webservice.server.servlet.WebServiceServlet.serverSideInvoke(WebServiceServlet.java:321)
+	at weblogic.webservice.server.servlet.ServletBase.doPost(ServletBase.java:453)
+	at weblogic.webservice.server.servlet.WebServiceServlet.doPost(WebServiceServlet.java:292)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:292)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:175)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3498)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(Unknown Source)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2180)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2086)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1406)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:201)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:173)
+[2011Sep29 10:25:21,154][DEBUG][1234567][consultarImeiSap ConsultaImeiSap.java:127][Generando archivo para SQL Loader con transacciones fallidas]
+[2011Sep29 10:25:21,163][DEBUG][1234567][consultarImeiSap ConsultaImeiSap.java:150][Fin de la ejecucion del WSConsultaIMEISAP]
+[2011Sep29 10:39:00,473][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: VYPV_WSConsultaIMEISAP - VERSION: 1.0]
+[2011Sep29 10:39:00,495][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Web Service encargado de verificar el estado del Imei en Sap]
+[2011Sep29 10:39:00,517][INFO ][1234567][consultarImeiSap ConsultaImeiSap.java:34][Inicio invocacion de WSConsultaIMEISAP. Channel:bus User:siebel]
+[2011Sep29 10:39:00,524][DEBUG][1234567][conectarSap EjecutarRFC.java:27][Inciando conexión a SAP]
+[2011Sep29 10:39:00,638][ERROR][1234567][consultarImeiSap ConsultaImeiSap.java:84][Ocurrio un error durante la conexion a SAP]
+java.lang.Exception: Error on ConsultaSap e-->> Nombre o clave de acceso incorrectos (repita la entrada al sistema)
+	at digitel.ConectorSap.<init>(ConectorSap.java:146)
+	at digitel.EjecutarRFC.conectarSap(EjecutarRFC.java:39)
+	at digitel.ConsultaImeiSap.consultarImeiSap(ConsultaImeiSap.java:80)
+	at digitel.bindings.WSConsultaIMEISAPImpl.consultarImeiSap(WSConsultaIMEISAPImpl.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at weblogic.webservice.component.javaclass.JavaClassInvocationHandler.invoke(JavaClassInvocationHandler.java:133)
+	at weblogic.webservice.core.handler.InvokeHandler.handleRequest(InvokeHandler.java:104)
+	at weblogic.webservice.core.HandlerChainImpl.handleRequest(HandlerChainImpl.java:143)
+	at weblogic.webservice.core.DefaultOperation.process(DefaultOperation.java:549)
+	at weblogic.webservice.server.Dispatcher.process(Dispatcher.java:204)
+	at weblogic.webservice.server.Dispatcher.doDispatch(Dispatcher.java:176)
+	at weblogic.webservice.server.Dispatcher.dispatch(Dispatcher.java:96)
+	at weblogic.webservice.server.WebServiceManager.dispatch(WebServiceManager.java:100)
+	at weblogic.webservice.server.servlet.WebServiceServlet.serverSideInvoke(WebServiceServlet.java:297)
+	at weblogic.webservice.server.servlet.ServletBase.doPost(ServletBase.java:498)
+	at weblogic.webservice.server.servlet.WebServiceServlet.doPost(WebServiceServlet.java:267)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1077)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:7047)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3902)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2773)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+Caused by: com.sap.mw.jco.JCO$Exception: (103) RFC_ERROR_LOGON_FAILURE: Nombre o clave de acceso incorrectos (repita la entrada al sistema)
+	at digitel.ConectorSap.<init>(ConectorSap.java:148)
+	... 30 more

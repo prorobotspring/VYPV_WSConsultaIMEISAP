@@ -1,0 +1,64 @@
+
+SQL*Loader: Release 10.2.0.3.0 - Production on Fri Oct 1 11:48:19 2010
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   control.par
+Data File:      sqlLoader.dat
+  Bad File:     sqlLoader.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 1000000
+Bind array:     100000 rows, maximum of 1000000 bytes
+Continuation:    none specified
+Path used:      Conventional
+Silent options: FEEDBACK
+Table PEDIDOSFALLIDOS, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+LOGIN                               FIRST     *   ;  O(") CHARACTER            
+CANAL                                NEXT     *   ;  O(") CHARACTER            
+FECHA_HORA                           NEXT     *   ;  O(") CHARACTER            
+    SQL string for column : "Current_Timestamp"
+NUM_PEDIDO                           NEXT     *   ;  O(") CHARACTER            
+SERIAL                               NEXT     *   ;  O(") CHARACTER            
+MARCA_MODELO                         NEXT     *   ;  O(") CHARACTER            
+    SQL string for column : "(SELECT atrbr_genrc FROM dwcat_opt.catmdw_valor_x_atrbr_mv@dbl_portal9i_dwcat WHERE valor_espcf = :COD_MATERIAL and rownum = 1)"
+COD_MATERIAL                         NEXT     *   ;  O(") CHARACTER            
+STATUS                               NEXT     *   ;  O(") CHARACTER            
+CENTRO                               NEXT     *   ;  O(") CHARACTER            
+POSICION                             NEXT     *   ;  O(") CHARACTER            
+IDENTDETALLE                         NEXT     *   ;  O(") CHARACTER            
+CODIGO_ERROR                         NEXT     *   ;  O(") CHARACTER            
+DETALLE_ERROR                        NEXT     *   ;  O(") CHARACTER            
+SERVICIO                             NEXT     *   ;  O(") CHARACTER            
+
+value used for ROWS parameter changed from 100000 to 276
+
+Table PEDIDOSFALLIDOS:
+  0 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 996912 bytes(276 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             0
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Fri Oct 01 11:48:19 2010
+Run ended on Fri Oct 01 11:48:19 2010
+
+Elapsed time was:     00:00:00.79
+CPU time was:         00:00:00.22

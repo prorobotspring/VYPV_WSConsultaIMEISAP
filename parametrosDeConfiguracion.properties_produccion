@@ -1,0 +1,11 @@
+codContrato = ORMO-00080
+sid = V11
+userId = VYPV
+pass = 12345678
+lang = ES
+host = 10.27.31.170
+sysNum = 02
+sapClient = 810
+clientPoolMaxConnections = 10
+datasource = ds/vypv_fraude_sap
+rutaArchivoFallidos = /integration/bea/user_projects/applications/VYPV_WSConsultaIMEISAP/sqlLoader.dat
